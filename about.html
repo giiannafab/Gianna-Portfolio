@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About Me</title>
+        <style>
+            body{
+                background-color: #ffc9de ;
+            }
+            header{ 
+                background-color: #add8e6;
+                text-align: center;
+                padding: 10px;
+                border: 2px black;
+                border-style: double;
+                border-radius: 20px;
+                }
+            header a img{
+                margin-left: 100px;
+                margin-right: 100px;
+                text-decoration: none;
+                width: 50px;
+                height: 50px;
+                }
+            .first{
+                margin-left: 20px;
+                padding: 20px;
+            }
+            .first h1{
+                font-size: 60px;
+                margin-top: 50px;
+                padding-left: 200px;
+                color: white;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                line-height: 0%;
+                text-shadow: 0 0 15px #eb53b8;
+            }
+            .first h2{
+                font-size: 30px;
+                margin-top: 70px;
+                padding-left: 200px;
+                color: white;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                line-height: 0%;
+                text-shadow: 0 0 15px #eb53b8;
+            }
+            .img1{
+               position: absolute;
+               width: 180px;
+               height: 180px;
+            }
+            .boxes1{
+                display: flex;
+                justify-content: center;
+                margin-top: 40px;
+            }
+            .second{
+                border: 2px solid black; 
+                border-radius: 15px ;  
+                box-shadow: 0 5px 10px rgb(117, 86, 50);            
+                background-color: rgb(250, 207, 143);
+                width: 45%;
+                transition: 0.3s ease;
+            }
+            .second:hover{
+                transform: scale(1.05);
+            }
+            .second img{
+                width: 120px;
+                height: 120px;
+                box-shadow:  5px 5px 5px rgb(117, 86, 50);
+                border-radius: 20%;
+                margin-left: 20px;
+                margin-bottom: 5px;
+            }
+            .second h2{
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 20px;
+                color: white;
+                text-shadow: 0 0 10px #62bb38;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            .third{
+                border: 2px solid black; 
+                border-radius: 15px ;  
+                box-shadow: 0 5px 10px rgb(87, 50, 117);            
+                background-color: rgb(206, 169, 248);
+                width: 45%;
+                transition: 0.3s ease;
+                margin-left: 40px;
+            }
+            .third:hover{
+                transform: scale(1.05);
+            }
+            .third img{
+                width: 120px;
+                height: 120px;
+                box-shadow:  5px 5px 5px rgb(87, 50, 117);
+                border-radius: 20%;
+                margin-left: 20px;
+                margin-bottom: 5px;
+            }
+            .third h2{
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 20px;
+                color: white;
+                text-shadow: 0 0 10px rgb(87, 50, 117);
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            .boxes2{
+                display: flex;
+                justify-content: center;
+                margin-top: 40px;
+            }
+            .fourth{
+                border: 2px solid black; 
+                border-radius: 15px ;  
+                box-shadow: 0 5px 10px rgb(50, 66, 117);            
+                background-color: rgb(169, 187, 248);
+                width: 45%;
+                transition: 0.3s ease;
+            }
+            .fourth:hover{
+                transform: scale(1.05);
+            }
+            .fourth img{
+                width: 120px;
+                height: 120px;
+                box-shadow:  5px 5px 5px rgb(50, 66, 117);
+                border-radius: 20%;
+                margin-left: 20px;
+                margin-bottom: 5px;
+            }
+            .fourth h2{
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 20px;
+                color: white;
+                text-shadow: 0 0 10px rgb(50, 66, 117);
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            .fifth{
+                border: 2px solid black; 
+                border-radius: 15px ;  
+                box-shadow: 0 5px 10px rgb(75, 117, 50);            
+                background-color: rgb(171, 212, 155);
+                width: 45%;
+                transition: 0.3s ease;
+                margin-left: 40px;
+            }
+            .fifth:hover{
+                transform: scale(1.05);
+            }
+            .fifth img{
+                width: 180px;
+                height: 120px;
+                box-shadow:  5px 5px 5px  rgb(75, 117, 50);
+                border-radius: 10%;
+                margin-left: 80px;
+                margin-bottom: 5px;
+            }
+            .fifth h2{
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 20px;
+                color: white;
+                text-shadow: 0 0 10px  rgb(75, 117, 50);
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            .boxes3{
+                display: flex;
+                justify-content: center;
+                margin-top: 40px;
+            }
+            .sixth{
+                border: 2px solid black; 
+                border-radius: 15px ;  
+                box-shadow: 0 5px 10px rgb(117, 107, 50);            
+                background-color: rgb(255, 237, 132);
+                width: 45%;
+                transition: 0.3s ease;
+            }
+            .sixth:hover{
+                transform: scale(1.05);
+            }
+            .sixth img{
+                width: 140px;
+                height: 180px;
+                box-shadow:  5px 5px 5px rgb(117, 107, 50);
+                border-radius: 20%;
+                margin-left: 40px;
+                margin-bottom: 5px;
+            }
+            .sixth h2{
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 20px;
+                color: white;
+                text-shadow: 0 0 10px rgb(117, 107, 50);
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            .seventh{
+                border: 2px solid black; 
+                border-radius: 15px ;  
+                box-shadow: 0 5px 10px rgb(117, 60, 50);            
+                background-color: rgb(231, 136, 120);
+                width: 45%;
+                transition: 0.3s ease;
+                margin-left: 40px;
+            }
+            .seventh:hover{
+                transform: scale(1.05);
+            }
+            .seventh img{
+                width: 140px;
+                height: 180px;
+                box-shadow:  5px 5px 5px  rgb(117, 60, 50);
+                border-radius: 10%;
+                margin-left: 40px;
+                margin-bottom: 5px;
+                margin-top: 20px;
+            }
+            .seventh h2{
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 20px;
+                color: white;
+                text-shadow: 0 0 10px  rgb(117, 60, 50);
+                padding-left: 10px;
+                padding-right: 10px;
+
+            }
+            .boxes4{
+                display: flex;
+                justify-content: center;
+                margin-top: 40px;
+            }
+            .eighth{
+                border: 2px solid black; 
+                border-radius: 15px ;  
+                box-shadow: 0 5px 10px rgb(50, 115, 117);            
+                background-color: rgb(149, 230, 225);
+                width: 45%;
+                transition: 0.3s ease;
+            }
+            .eighth:hover{
+                transform: scale(1.05);
+            }
+            .eighth img{
+                width: 120px;
+                height: 120px;
+                box-shadow:  5px 5px 5px rgb(50, 115, 117);
+                border-radius: 20%;
+                margin-left: 20px;
+                margin-bottom: 5px;
+            }
+            .eighth h2{
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 20px;
+                color: white;
+                text-shadow: 0 0 10pxrgb(50, 115, 117);
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            .ninth{
+                border: 2px solid black; 
+                border-radius: 15px ;  
+                box-shadow: 0 5px 10px rgb(117, 50, 117);            
+                background-color: rgb(248, 169, 248);
+                width: 45%;
+                transition: 0.3s ease;
+                margin-left: 40px;
+            }
+            .ninth:hover{
+                transform: scale(1.05);
+            }
+            .ninth img{
+                width: 120px;
+                height: 120px;
+                box-shadow:  5px 5px 5px rgb(117, 50, 117);
+                border-radius: 20%;
+                margin-left: 20px;
+                margin-bottom: 5px;
+            }
+            .ninth h2{
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 20px;
+                color: white;
+                text-shadow: 0 0 10px rgb(117, 50, 117);
+                padding-left: 10px;
+                padding-right: 10px;
+                
+            }
+            .tenth{
+                border: 2px solid black; 
+                border-radius: 15px ;  
+                box-shadow: 0 5px 10px rgb(98, 50, 117);            
+                background-color: rgb(205, 176, 243);
+                width: 90%;
+                transition: 0.3s ease;
+                margin-left: 60px;
+                margin-top: 40px;
+            }
+            .tenth:hover{
+                transform: scale(1.05);
+            }
+            .tenth img{
+                width: 180px;
+                height: 120px;
+                box-shadow:  5px 5px 5px  rgb(98, 50, 117);
+                border-radius: 10%;
+                margin-left: 90px;
+                margin-bottom: 5px;
+            }
+            .tenth h2{
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 20px;
+                color: white;
+                text-shadow: 0 0 10px  rgb(98, 50, 117);
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            .eleventh{
+                border: 2px solid black; 
+                border-radius: 15px ;  
+                box-shadow: 0 5px 10px rgb(117, 101, 50);            
+                background-color: rgb(255, 226, 96);
+                width: 90%;
+                transition: 0.3s ease;
+                margin-left: 60px;
+                margin-top: 40px;
+            }
+            .eleventh:hover{
+                transform: scale(1.05);
+            }
+            .eleventh h2{
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 20px;
+                color: white;
+                text-shadow: 0 0 10px  rgb(117, 101, 50);
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            .eleventh iframe{
+                width: 90%;
+                height: 400px;
+                margin-top: 10px;
+                margin-bottom: 10px2;
+                margin-left: 60px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <a href="home.html"><img src="home icon.png" alt="Home icon"></a>
+            <a href="about.html"><img src="about me icon.png" alt="About me icon"></a>
+            <a href="projects.html"><img src="projects icon.png" alt="Projects icon"></a>
+            <a href="contacts.html"><img src="contacts icon.png" alt="Contacts icon"></a>
+        </header>
+        <div class="first">
+            <img src="bun.gif" alt="Bunny" class="img1">
+            <h1 class="welcome">10 Facts About Me!</h1>
+            <h2>GIANNA CASSANDRA R. FABERES</h2>
+        </div>
+        <div class="boxes1">
+            <div class="second">
+                <h2>1. My first dream job was to become a wildlife conservationist, like Dean Schneider.</h2>
+                <img alt="Dean Schneider" src="dean.jpg">
+                <img alt="Wildlife conservationist" src="wildlife.jpg">
+                <img alt="Dean Schneider" src="dean2.jpg">
+                <img alt="Wildlife conservationist" src="wildlife2.jpg">
+            </div>
+            <div class="third">
+                <h2>2. I’ve been to a few concerts, but my favorite was hands down the Seventeen concert I attended.
+                </h2>
+                    <img alt="Concert Venue" src="concert.jpg">
+                    <img alt="Seventeen Member DK" src="dk.jpg">
+                    <img alt="My cousin and I" src="us.jpg">
+                    <img alt="Concert Venue" src="concert2.jpg">
+            </div>
+        </div>
+        <div class="boxes2">
+            <div class="fourth">
+                <h2>3. I collect music albums for fun.</h2>
+                    <img alt="Concert Venue" src="album1.jpg">
+                    <img alt="Seventeen Member DK" src="album2.jpg">
+                    <img alt="My cousin and I" src="album3.jpg">
+                    <img alt="Concert Venue" src="album4.jpg">
+            </div>
+            <div class="fifth">
+                <h2>4. I have made web pages before!</h2>
+                    <img alt="Web page" src="webpage1.jpg">
+                    <img alt="Web page" src="webpage2.jpg">
+            </div>
+        </div>
+        <div class="boxes3">
+            <div class="sixth">
+                <h2>5. My all-time favorite Chinese drama is The Best Thing, while 20th Century Girl is one of my top Korean films. As for Japanese movies, Drawing Closer is definitely my favorite.</h2>
+                    <img alt="The Best Thing" src="bestthing.jpg">
+                    <img alt="20th Century Girl" src="centurygirl.jpg">
+                    <img alt="Drawing Closer" src="drawingcloser.jpg">
+            </div>
+            <div class="seventh">
+                <h2>6. At one point, I wanted to be a baker... even though the only thing I’ve ever baked is cookies.</h2>
+                    <img alt="Baker" src="baker1.jpg">
+                    <img alt="Cookies" src="baker2.jpg">
+                    <img alt="Bakery" src="bake3.jpg">
+            </div>
+        </div>
+        <div class="boxes4">
+            <div class="eighth">
+                <h2>7. Lions are my favorite animals, followed closely by whale sharks.</h2>
+                <img alt="Lion Cub" src="lion1.jpg">
+                <img alt="Lion" src="lion2.jpg">
+                <img alt="Whale shark" src="whaleshark1.jpg">
+                <img alt="Whale Sharks" src="whaleshark2.jpg">
+            </div>
+            <div class="ninth">
+                <h2>8. I was such a shy kid that one of my classmates thought I was mute.</h2>
+                    <img alt="Me in our old office" src="me1.jpg">
+                    <img alt="Me with an angry baby face" src="me2.jpg">
+                    <img alt="Me after eating Jollibee as a kid" src="me3.jpg">
+                    <img alt="Me in a zoo when I was little" src="me4.jpg">
+            </div>
+        </div>
+            <div class="tenth">
+                <h2>9. When I finally made my first friend, my teacher was so happy that she called my mom—she probably thought something was wrong with me. These are my friends now:</h2>
+                    <img alt="Friends" src="friend1.jpg">
+                    <img alt="Friends" src="friend2.jpg">
+                    <img alt="Friends" src="friend3.jpg">
+                    <img alt="Friends" src="friend4.jpg">
+                    <img alt="Friends" src="friend5.jpg">
+                    <img alt="Friends" src="friend6.jpg">
+                    <img alt="Friends" src="friend7.jpg">
+                    <img alt="Friends" src="friend8.jpg">
+            </div>
+        <div class="eleventh">
+            <h2>10. This is my favorite playlist at the moment:</h2>
+            <iframe src="https://open.spotify.com/embed/playlist/2X9qVOmiQZ7GWdcoEHU6qq?utm_source=generator"></iframe>
+        </div>
+    </body>
+</html>
